@@ -13,20 +13,21 @@
   line-height: 82px;
   @media screen and (max-width: $min-width) {
     min-width: unset;
+    height: 1rem;
+    line-height: 1rem;
   }
 }
 
 .header__logo {
   display: inline-block;
-  margin-top: 15px;
   width: 215px;
-  height: 54px;
+  height: 82px;
   background: url('../../static/images/logo@1x.png') no-repeat center;
   @media screen and (max-width: $min-width) {
     width: 1.89rem;
-    height: 0.43rem;
+    height: 1rem;
     margin-left: 0.3rem;
-    background: url('../../static/images/h5_logo@1x.png') no-repeat;
+    background: url('../../static/images/h5_logo@1x.png') no-repeat center;
     background-size: 1.89rem 0.43rem;
   }
 }
@@ -50,20 +51,31 @@
       }
     }
   }
+  &__phonenumber {
+    display: none;
+    @media screen and (max-width: $min-width) {
+      display: inline-block;
+    }
+  }
+  &__toggle {
+    display: none;
+  }
   .header__contact {
     display: inline-block;
-    vertical-align: top;
     position: relative;
     top: -3px;
-    margin-left: 10px;
     width: 358px;
     height: 82px;
     background: url('../../static/images/contact@1x.png') no-repeat center;
+    vertical-align: top;
+    margin-left: 10px;
     @media screen and (max-width: $min-width) {
       width: 0.28rem;
-      height: 0.28rem;
-      background: url('../../static/images/icons/h5_icon_contact.png') no-repeat;
+      height: 1rem;
+      top: 0;
+      background: url('../../static/images/icons/h5_icon_contact.png') no-repeat  center;
       background-size: 0.28rem 0.28rem;
+      margin-right: 0.1rem;
     }
   }
 }

@@ -1,4 +1,8 @@
 .main {
+  min-width: 900px;
+  @media screen and (max-width: $min-width) {
+    min-width: unset;
+  }
   .home {
     width: 100%;
   }
@@ -6,6 +10,9 @@
   .page {
     max-width: 1176px;
     min-width: 900px;
+    @media screen and (max-width: $min-width) {
+      min-width: unset;
+    }
     margin: 30px auto;
     background-color: $normal-white;
     border: 1px solid $light-grey;
@@ -21,6 +28,7 @@
         cursor: pointer;
         &.active {
           color: $normal-white;
+          background-color: #DF1428;
           background: radial-gradient(#DF1428,#ED2C39); /* 标准的语法 */
         }
       }

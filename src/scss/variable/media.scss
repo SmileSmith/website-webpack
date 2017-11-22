@@ -1,0 +1,52 @@
+$min-width: 768px;
+
+html{ -webkit-transition: font-size .2s ease-out; transition: font-size .2s ease-out; }
+/* 设计稿宽度=640时, 4rem=400px, 1rem=100px, .5rem = 50px, .1rem = 10px 以此类推 */
+@media screen and (max-width: 1280px) {
+	html{ font-size: 200px; }
+}
+@media screen and (max-width: 1200px) {
+	html{ font-size: 187.5px; }
+}
+@media screen and (max-width: 1120px) {
+	html{ font-size: 175px; }
+}
+@media screen and (max-width: 1080px) {
+	html{ font-size: 168.75px; }
+}
+@media screen and (max-width: 960px) {
+	html{ font-size: 150px; }
+}
+@media screen and (max-width: 880px) {
+	html{ font-size: 137.5px; }
+}
+@media screen and (max-width: 840px) {
+	html{ font-size: 131.25px; }
+}
+@media screen and (max-width: 800px) {
+	html{ font-size: 125px; }
+}
+@media screen and (max-width: 720px) {
+	html{ font-size: 112.5px; }
+}
+@media screen and (max-width: 640px) {
+	html{ font-size: 100px; }
+}
+@media screen and (max-width: 600px) {
+	html{ font-size: 93.75px; }
+}
+@media screen and (max-width: 560px) {
+	html{ font-size: 87.5px; }
+}
+@media screen and (max-width: 480px) {
+	html{ font-size: 75px; }
+}
+@media screen and (max-width: 400px) {
+	html{ font-size: 62.5px; }
+}
+@media screen and (max-width: 360px) {
+	html{ font-size: 56.25px; }
+}
+@media screen and (max-width: 320px) {
+	html{ font-size: 50px; }
+}

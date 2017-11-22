@@ -1,6 +1,9 @@
 .header__back {
   width: 100%;
   background-color: #FFFFFF;
+  @media screen and (max-width: $min-width) {
+
+  }
 }
 .header {
   max-width: 1176px;
@@ -8,19 +11,34 @@
   margin: 0 auto;
   height: 82px;
   line-height: 82px;
+  @media screen and (max-width: $min-width) {
+    min-width: unset;
+  }
 }
 
 .header__logo {
-  float: left;
-  .img {
-    margin-top: 15px;
-    vertical-align: middle;
+  display: inline-block;
+  margin-top: 15px;
+  width: 215px;
+  height: 54px;
+  background: url('../../static/images/logo@1x.png') no-repeat center;
+  @media screen and (max-width: $min-width) {
+    width: 1.89rem;
+    height: 0.43rem;
+    margin-left: 0.3rem;
+    background: url('../../static/images/h5_logo@1x.png') no-repeat;
+    background-size: 1.89rem 0.43rem;
   }
 }
 .header__nav {
   float: right;
   .list {
     display: inline-block;
+    height: 82px;
+    vertical-align: top;
+    @media screen and (max-width: $min-width) {
+      display: none;
+    }
     .link {
       display: inline-block;
       font-size: 18px;
@@ -32,10 +50,20 @@
       }
     }
   }
-  .img {
+  .header__contact {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
-    top: -5px;
+    top: -3px;
     margin-left: 10px;
-    vertical-align: middle;
+    width: 358px;
+    height: 82px;
+    background: url('../../static/images/contact@1x.png') no-repeat center;
+    @media screen and (max-width: $min-width) {
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url('../../static/images/icons/h5_icon_contact.png') no-repeat;
+      background-size: 0.28rem 0.28rem;
+    }
   }
 }

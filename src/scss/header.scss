@@ -1,0 +1,41 @@
+.header__back {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.header {
+  max-width: 1176px;
+  min-width: 900px;
+  margin: 0 auto;
+  height: 82px;
+  line-height: 82px;
+}
+
+.header__logo {
+  float: left;
+  .img {
+    margin-top: 15px;
+    vertical-align: middle;
+  }
+}
+.header__nav {
+  float: right;
+  .list {
+    display: inline-block;
+    .link {
+      display: inline-block;
+      font-size: 18px;
+      margin: 0 30px;
+      cursor: pointer;
+      color: $normal-black;
+      &.active {
+        color: $normal-red;
+      }
+    }
+  }
+  .img {
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}

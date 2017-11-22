@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: 65px;
+  color: $footer-white;
+  font-size: 16px;
+  background-color: $footer-black;
+  text-align: center;
+  &__copyright {
+    height:65px;
+    line-height: 65px;
+    align-content: middle;
+  }
+}

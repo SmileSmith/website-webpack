@@ -1,0 +1,50 @@
+@mixin arrow-factory($deg) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: -4px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 1px;
+    transform: rotate($deg);
+    top: 6px;
+    left: 6px;
+  }
+}
+
+@mixin left-arrow {
+  @include arrow-factory(315deg);
+}
+
+@mixin right-arrow {
+  @include arrow-factory(135deg);
+}
+
+@mixin up-arrow {
+  @include arrow-factory(45deg);
+}
+
+@mixin down-arrow {
+  @include arrow-factory(225deg);
+}
+
+@mixin left-up-arrow {
+  @include arrow-factory(0);
+}
+
+@mixin right-up-arrow {
+  @include arrow-factory(90deg);
+}
+
+@mixin left-down-arrow {
+  @include arrow-factory(270deg);
+}
+
+@mixin right-down-arrow {
+  @include arrow-factory(180deg);
+}

@@ -1,0 +1,60 @@
+.main {
+  .home {
+    width: 100%;
+  }
+
+  .page {
+    max-width: 1176px;
+    min-width: 900px;
+    margin: 30px auto;
+    background-color: $normal-white;
+    border: 1px solid $light-grey;
+    &__nav {
+      display: inline-block;
+      width: 17.8571429%;
+      vertical-align: top;
+      padding: 40px 0;
+      &__link {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        &.active {
+          color: $normal-white;
+          background: radial-gradient(#DF1428,#ED2C39); /* 标准的语法 */
+        }
+      }
+    }
+    &__content {
+      display: inline-block;
+      width: 81.972789%;
+      min-height: 1000px;
+      vertical-align: top;
+      border-left: 1px solid $light-grey;
+      .section {
+        padding: 40px 30px;
+        &__title {
+          font-size: 20px;
+          font-weight: bold;
+          color: $normal-black;
+          margin-bottom: 30px;
+        }
+        &__line {
+          width: 100%;
+          height: 2px;
+          background-color: $light-grey;
+          margin-bottom: 15px;
+          .head {
+            position: absolute;
+            height: 2px;
+            width: 73px;
+            background-color: $normal-red;
+          }
+        }
+        &__article {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

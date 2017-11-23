@@ -33,21 +33,58 @@
 }
 .header__nav {
   float: right;
+  @media screen and (max-width: $min-width) {
+    height: 1rem;
+  }
   .list {
     display: inline-block;
     height: 82px;
     vertical-align: top;
     @media screen and (max-width: $min-width) {
       display: none;
+      width: 100%;
+      height: 1rem;
+      position: absolute;
+      top: 1rem;
+      left: 0rem;
     }
     .link {
       display: inline-block;
       font-size: 18px;
-      margin: 0 30px;
+      padding: 0 30px;
       cursor: pointer;
       color: $normal-black;
       &.active {
         color: $normal-red;
+      }
+      &__arrow {
+        display: none;
+      }
+      @media screen and (max-width: $min-width) {
+        display: block;
+        position: relative;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        padding: 0 0.3rem;
+        font-size: 0.25rem;
+        color: $light-white;
+        background-color: $normal-black;
+        opacity: 0.95;
+        &.active {
+          opacity: 0.999;
+          color: $light-red;
+        }
+        &__arrow {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0px;
+          width: 0.18rem;
+          height: 0.89rem;
+          margin-right: 0.3rem;
+          background: url('../../static/images/icons/h5_icon_arrow.png') no-repeat center;
+          background-size: 0.18rem 0.3rem;
+        }
       }
     }
   }
@@ -55,10 +92,34 @@
     display: none;
     @media screen and (max-width: $min-width) {
       display: inline-block;
+      vertical-align: top;
+      font-size: 0.2rem;
+      margin-right: 0.1rem;
     }
   }
   &__toggle {
     display: none;
+    width: 1rem;
+    @media screen and (max-width: $min-width) {
+      display: inline-block;
+      .button {
+        width: 0.32rem;
+        height: 1rem;
+        margin: 0 auto;
+        background: url('../../static/images/icons/h5_icon_menu.png') no-repeat center;
+        background-size: 0.32rem 0.28rem;
+        cursor: pointer;
+      }
+    }
+    &.active {
+      background-color: $light-grey;
+      @media screen and (max-width: $min-width) {
+        .button {
+          background: url('../../static/images/icons/h5_icon_close.png') no-repeat center;
+          background-size: 0.24rem 0.24rem;
+        }
+      }
+    }
   }
   .header__contact {
     display: inline-block;
@@ -75,6 +136,7 @@
       top: 0;
       background: url('../../static/images/icons/h5_icon_contact.png') no-repeat  center;
       background-size: 0.28rem 0.28rem;
+      margin-left: 0;
       margin-right: 0.1rem;
     }
   }

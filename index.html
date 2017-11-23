@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>恒大金融</title>
+  <title>金融披露</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,7 +12,7 @@
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
-  <meta http-equiv="keywords" content="恒大,小贷,普惠">
+  <meta http-equiv="keywords" content="小贷,普惠">
   <meta http-equiv="description" content="This is my page">
 <!--[if lt IE 9]>
     <script type="text/javascript" src="/static/es5-shim.min.js"></script>
@@ -43,45 +43,40 @@
       <div class="header__logo">
       </div>
       <nav class="header__nav">
-        <ul class="list">
-          <li class="link active" id="toHome">首页</li>
-          <li class="link" id="toExplore">信息披露</li>
+        <ul class="list" id="nav">
+          <li class="link active" id="toHome">首页<div class="link__arrow"></div></li><li class="link" id="toExplore" style="margin-top: -1px;">信息披露<div class="link__arrow"></div></li>
         </ul>
         <div class="header__contact"></div>
-        <div class="header__nav__phonenumber">热线：400-008-3333</div>
-        <div class="header__nav__toggle"></div>
+        <div class="header__nav__phonenumber">业主热线：400-000-0000</div>
+        <div class="header__nav__toggle" id="toggleNav"><div class="button"></div></div>
       </nav>
     </header>
   </div>
   <div class="main">
     <div id="home" class="home">
-      <img class="home"
+      <img class="home__img"
         src="./static/images/home_one@1x.png"
-        srcSet="./static/images/home_one@0.5x.png 0.5x,
-        ./static/images/home_one@1x.png 1x,
+        srcSet="./static/images/home_one@1x.png 1x,
         ./static/images/home_one@2x.png 2x,
         ./static/images/home_one@3x.png 3x,"
         alt="热线电话"
-      /><img class="home"
+      /><img class="home__img"
         src="./static/images/home_two@1x.png"
-        srcSet="./static/images/home_two@0.5x.png 0.5x,
-        ./static/images/home_two@1x.png 1x,
+        srcSet="./static/images/home_two@1x.png 1x,
         ./static/images/home_two@2x.png 2x,
         ./static/images/home_two@3x.png 3x,"
         alt="热线电话"
-      /><img class="home"
+      /><img class="home__img"
         src="./static/images/home_three@1x.png"
-        srcSet="./static/images/home_three@0.5x.png 0.5x,
-        ./static/images/home_three@1x.png 1x,
+        srcSet="./static/images/home_three@1x.png 1x,
         ./static/images/home_three@2x.png 2x,
         ./static/images/home_three@3x.png 3x,"
         alt="热线电话"
       /></div>
-    <div class="page" id="explore" style="display: none;">
+    <div class="page" id="explore"   style="display: none;">
       <nav class="page__nav">
         <ul>
-          <li class="page__nav__link active" id='toAgencyInfo'>机构信息</li>
-          <li class="page__nav__link" id='toBusinessInfo'>业务信息</li>
+          <li class="page__nav__link active" id='toAgencyInfo'>机构信息</li><li class="page__nav__link" id='toBusinessInfo'>业务信息</li>
         </ul>
       </nav><div class="page__content">
         <section id="agencyInfo">
@@ -89,23 +84,23 @@
             <div class="section__title">机构概况</div>
             <div class="section__line"><div class="head"></div></div>
             <p class="section__article">
-              <strong>全称及简称(如有)：</strong>广州恒大小额贷款有限公司<br />
-              <strong>注册资本：</strong>100,000,000元人民币<br />
-              <strong>注册地址：</strong>广州市越秀区长堤大马路果菜西一街8、10、14号自编A区第六层<br />
-              <strong>经营地址：</strong>广州市越秀区长堤大马路果菜西一街8、10、14号自编A区第六层<br />
-              <strong>成立时间：</strong>2016年11月14日<br />
-              <strong>经营牌照：</strong>广州市越秀区金融工作局核准办理各项小额贷款业务<br />
-              <strong>客服电话及其他联系方式：</strong>020-38657256<br />
-              <strong>实际控制人与持股 5%以 上的股东的名单：</strong>恒大互联网金融服务（深圳）有限公司<br />
-              <strong>营业执照：</strong>http://cri.gz.gov.cn/Detail?zch=EEF66BC84556E42D08D11E64F6596474
+              <strong>全称及简称(如有)：</strong>小精灵Pokemen<br />
+              <strong>注册资本：</strong>采用768为自适应边界<br />
+              <strong>注册地址：</strong>768以下为移动端的布局<br />
+              <strong>经营地址：</strong>768以上为PC端的布局<br />
+              <strong>成立时间：</strong>考虑IE和其他兼容性，布局大部分使用inline-block<br />
+              <strong>经营牌照：</strong>用了H5的nav、header、footer等元素<br />
+              <strong>客服电话及其他联系方式：</strong>考虑了IE低版本兼容性，在头部引用了htm5shiv.js<br />
+              <strong>实际控制人与持股 5%以 上的股东的名单：</strong>考虑到IE兼容性，在IE9及以下添加es5shim.js和es5sham.js<br />
+              <strong>营业执照：</strong>并在头部添加get和set方法
             </p>
           </div>
           <div class="section">
             <div class="section__title">网站信息</div>
             <div class="section__line"><div class="head"></div></div>
             <p class="section__article">
-              <strong>官方网站地址：</strong>hengdadai.com<br />
-              <strong>电信业务经营许可信息：</strong>粤ICP备17059978号-1<br />
+              <strong>官方网站地址：</strong>localhost<br />
+              <strong>电信业务经营许可信息：</strong>粤ICP备111111号-1<br />
             </p>
           </div>
         </section>
@@ -114,21 +109,20 @@
             <div class="section__title">产品申请</div>
             <div class="section__line"><div class="head"></div></div>
             <p class="section__article">
-              <strong>产品信息：</strong>秒贷、现金模式、用于用户指定用途消费支付（旅游、美容、装修、教育学资、大额消费、其他）<br />
+              <strong>产品信息：</strong>用于用户指定用途消费支付（旅游、美容、装修、教育学资、大额消费、其他）<br />
               <strong>申请条件：</strong><br />
               具有完全民事行为能力，在中国境内具有常住户口的中华人民共和国公民（港、澳、台除外）<br />
               年龄在25周岁（含）以上，借款人年龄不得超过55周岁<br />
-              借款人拥有恒大房产<br />
+              借款人拥有房产<br />
               <strong>贷款合同、服务协议和产品说明及其他约定：</strong>见前端相关协议<br />
               <strong>收费项目与计算标准：</strong><br />
               年化利率：6.09%<br />
-              期初服务费：0%（放款后收取）<br />
-              月服务费：0%（每月账单日收取）<br />
+              月服务费：0.80%（每月还款日收取）<br />
               支持期限：1,2,3个月<br />
               还款方式：按月付息，到期还本<br />
               无最低还款金额<br />
               贷款期限届满日的次日开始计算逾期贷款的罚息，逾期贷款的罚息＝罚息利率×逾期本金金额×逾期天数，逾期贷款的罚息利率按合同中约定的利率上浮比例计算<br />
-              <strong>账户安全知识和风险提示：</strong>无线下核查，秒贷产品为全线上申请
+              <strong>账户安全知识和风险提示：</strong>无线下核查，全线上申请
             </p>
            </div>
           <div class="section">
@@ -146,13 +140,13 @@
             <p class="section__article">
               <strong>催收管理：</strong>
               催收主体：包括消费金融公司贷后管理室、委外催收机构（暂无）、委外律所（暂无）<br />
-              催收方法：通过电话、信函、手机信息、电子邮件、上门面访、公告，申请相关部门进行调查、提起仲裁、诉讼等合法途径。M3以内，中、低风险逾期账户由消费金融公司贷后管理室负责通知、提醒；<br />
+              催收方法：通过电话、信函、手机信息、电子邮件、上门面访、公告，申请相关部门进行调查、提起仲裁、诉讼等合法途径。M3以内，中、低风险逾期账户由贷后管理室负责通知、提醒；<br />
               催收流程：M3以内，高风险逾期账户和M3以上逾期账户由委外催收机构负责通知、提醒、上门核查（暂无）；<br />
               部分M3以上高风险逾期账户将通过委外律所提起诉讼（暂无）<br />
               逾期情况：截至2017年9月30日，逾期率为零；不良率为零<br />
               <br />
               <strong>征信报送：</strong>
-              在获得借款人签字授权查询个人征信信息的前提下，个人征信报告由获得查询并发布个人征信信息牌照的合法金融机构提供。借款人在贷款发放机构申请的贷款一旦发生逾期，贷款发放机构有权将借款人的逾期数据上报到央行征信中心
+              在获得借款人签字授权查询个人征信信息的前提下，个人征信报告由获得查询并发布个人征信信息牌照的合法金融机构提供。借款人在贷款发放机构申请的贷款一旦发生逾期，贷款发放机构有权将借款人的逾期数据上报到央行征信中心。
             </p>
           </div>
         </section>
@@ -160,10 +154,9 @@
     </div>
   </div>
   <footer class="footer">
-    <p class="footer__copyright">©2017 | 粤ICP备17133454号-1 | 广州恒大小额贷款有限公司</p>
+    <p class="footer__copyright">©2017 | 粤ICP备11111111号-1 | 广州小精灵有限公司</p>
   </footer>
-  <script>
-  </script>
+  <script src="./static/app.min.js" charset="utf-8"></script>
 </body>
 
 </html>

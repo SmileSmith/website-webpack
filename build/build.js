@@ -5,6 +5,7 @@ process.env.NODE_ENV = 'production'
 var ora = require('ora')
 var rm = require('rimraf')
 var path = require('path')
+var fs = require('fs')
 var chalk = require('chalk')
 var webpack = require('webpack')
 var config = require('../config')
@@ -25,6 +26,14 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
       chunks: false,
       chunkModules: false
     }) + '\n\n')
+
+    const appJsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory, 'app.min.js');
+    const appJsNewPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory, 'app.' + stats.hash + '.js');
+
+    fs.renameSync(appJsPath, appJsNewPath);
+    let indexHtml = fs.readFileSync(path.join(config.build.assetsRoot, 'index.html'), 'utf-8')
+    indexHtml = indexHtml.replace('./static/app.min.js', './static/' + 'app.' + stats.hash + '.js');
+    fs.writeFileSync(path.join(config.build.assetsRoot, 'index.html'), indexHtml, 'utf-8')
 
     console.log(chalk.cyan('  Build complete.\n'))
     console.log(chalk.yellow(

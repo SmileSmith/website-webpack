@@ -11,11 +11,12 @@
     height:65px;
     line-height: 65px;
     font-size: 16px;
-    align-content: middle;
+    align-content: center;
     @media screen and (max-width: $min-width) {
       height: 40px;
       line-height: 40px;
       font-size: 0.16rem;
+      overflow: hidden;
     }
   }
 }

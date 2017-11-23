@@ -10,9 +10,7 @@
   ],
   "plugins": [
     "transform-runtime",
-    "transform-object-rest-spread",
-    "transform-es3-property-literals",
-    "transform-es2015-modules-simple-commonjs"
+    "transform-object-rest-spread"
   ],
   "comments": false,
   "env": {

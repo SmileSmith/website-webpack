@@ -34,40 +34,14 @@ template {
 }
 
 html {
+  font-family: $hui-font-default;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* 媒体查询 字号 分为20份 */
-@media screen and (width:320px){
-  html{
-      font-size:(320/20)/(32/100)px;
-  }
-}
-@media screen and (width:360px){
-  html{
-      font-size:(360/20)/(32/100)px;
-  }
-}
-@media screen and (width:375px){
-  html{
-      font-size:(375/20)/(32/100)px;
-  }
-}
-@media screen and (width:414px){
-  html{
-      font-size:(414/20)/(32/100)px;
-  }
-}
-@media screen and (width:412px){
-  html{
-      font-size:(412/20)/(32/100)px;
-  }
-}
-
 body {
   margin: 0;
-  background: #F3F3F3;
+  background: $back-white;
 }
 
 a {
@@ -170,7 +144,7 @@ button,
 select {
   text-transform: none;
 }
-/* line 47, ../../../../../../../../.rvm/gems/ruby-2.3.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -252,8 +226,7 @@ th {
 }
 
 body {
-  color: #333;
-  font-family: $hui-font-default;
+  color: $normal-black;
   font-size: 14px;
 }
 
@@ -272,12 +245,12 @@ button {
 
 body a {
   text-decoration: none;
-  color: #000;
+  color: $normal-black;
   outline: none !important;
 }
 body a:hover {
   text-decoration: underline;
-  color: #E2192C;
+  color: $normal-red;
 }
 
 ul li {

@@ -5,7 +5,7 @@
   background-color: $footer-black;
   text-align: center;
   @media screen and (max-width: $min-width) {
-    min-width: unset;
+    min-width: 0px;
   }
   &__copyright {
     height:65px;

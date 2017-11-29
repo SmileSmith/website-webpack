@@ -12,7 +12,7 @@
   height: 82px;
   line-height: 82px;
   @media screen and (max-width: $min-width) {
-    min-width: unset;
+    min-width: 0px;
     height: 1rem;
     line-height: 1rem;
   }
